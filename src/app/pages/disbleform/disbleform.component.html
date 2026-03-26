@@ -1,0 +1,16 @@
+<h1>Disable form </h1>
+
+<form [formGroup]="disbaleform">
+  <div class="row">
+    <div class="col">
+      <label>Name : </label>
+      <input type="text" placeholder="Enter your name " formControlName="name">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" [disabled]="disbaleform.invalid" (click)="submit()">Submit</button>
+    </div>
+  </div>
+</form>
