@@ -1,1 +1,22 @@
 <h1>Add Form Element</h1>
+
+<form [formGroup]="form">
+  <div class="row">
+    <div class="col">
+      <label>Name : </label>
+      <input type="text" placeholder="Enter your name " formControlName="name">
+    </div>
+ <div class="col" *ngIf="form.contains('email')">
+      <label>email : </label>
+      <input type="text" placeholder="Enter your name " formControlName="email">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button"(click)="addEmail()">+</button>
+      <button type="button"(click)="removeEmail()">-</button>
+       <button type="submit" [disabled]="form.invalid">Submit</button>
+
+    </div>
+  </div>
+</form>
