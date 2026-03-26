@@ -7,9 +7,10 @@ import { PasswordhideComponent } from './pages/passwordhide/passwordhide.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DisbleformComponent } from './pages/disbleform/disbleform.component';
+import { AddFormElementComponent } from './pages/add-form-element/add-form-element.component';
 
 @NgModule({
-  declarations: [AppComponent, PasswordhideComponent, DisbleformComponent],
+  declarations: [AppComponent, PasswordhideComponent, DisbleformComponent, AddFormElementComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
